@@ -4,9 +4,9 @@ public class Mascara extends Product {
 
     private boolean waterproof;
     
-    public Mascara(String name, String sku, double price, String brushType, boolean waterproof) {
+    public Mascara(String name, String sku, double price,double discount, String brushType, boolean waterproof) {
 //super class constructor
-        super(name, sku, price);
+        super(name, sku, price, discount);
         this.waterproof = waterproof;
     }
 

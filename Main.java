@@ -6,8 +6,8 @@ public class Main {
     Aisle makeupAisle = new Aisle("Makeup");
     //Products
 
-    Product lipstick = new Lipstick("Lipstick", "T001", 12.99, "pink");
-    Product lipstick2 = new Lipstick("Lipstick2", "T002", 12.99, "red");
+    Product lipstick = new Lipstick("Lipstick", "T001", 12.99,0.0, "pink");
+    Product lipstick2 = new Lipstick("Lipstick2", "T002", 12.99,0.0, "red");
 
     //Add products to the makeup aisle
     makeupAisle.addProduct(lipstick);

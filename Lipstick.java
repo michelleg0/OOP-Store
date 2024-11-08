@@ -5,9 +5,9 @@ public class Lipstick extends Product {
 //private to encapsulate within the class
     private String shade;
 
-    public Lipstick(String name, String sku, double price, String shade) {
+    public Lipstick(String name, String sku, double price, double discount,String shade) {
 //reusing the constructor of the parent class
-        super(name, sku, price);
+        super(name, sku, price, discount);
 //assigning the shade parameter to the shade instance
         this.shade = shade;
     }

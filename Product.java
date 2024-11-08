@@ -7,14 +7,16 @@ public class Product {
     private String name;
     private String sku;
     private double price;
+    private double discount;
 
 //Constructor. Set to public, so it can be called outside of the class
-public Product(String name, String sku, double price) {
+public Product(String name, String sku, double price, double discount) {
 
 //This keyword refers to the current object.
     this.name = name;
     this.sku = sku;
     this.price = price;
+    this.discount = discount;
 
 }
 
@@ -30,6 +32,22 @@ public String getSku() {
 
 public double getPrice() {
     return price;
+}
+
+public void setPrice(double price) {
+    this.price = price;
+}
+
+public double getDiscount() {
+    return discount;
+}
+
+public void setDiscount(double discount) {
+    this.discount = discount;
+}
+
+public double getFinalPrice(){
+    return price - (price * discount /100);
 }
     
 }
